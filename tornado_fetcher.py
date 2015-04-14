@@ -29,7 +29,7 @@ class Fetcher(object):
         'timeout': 120,
     }
 
-    def __init__(self, phantomjs_proxy='http://localhost:25555', user_agent='', pool_size=100, async=False):
+    def __init__(self, phantomjs_proxy='http://localhost:12306', user_agent='', pool_size=100, async=False):
         self.phantomjs_proxy = phantomjs_proxy
         self.user_agent = user_agent
         self.async = async
@@ -109,4 +109,5 @@ class Fetcher(object):
 
 if __name__ == '__main__':
     fetcher = Fetcher()
-    res = fetcher.phantomjs_fetch('http://www.baidu.com')
+    res = fetcher.phantomjs_fetch('http://www.2tu.cc/Html/GP233.html')
+    print res
